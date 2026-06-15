@@ -1,0 +1,323 @@
+/* ==========================================================================
+   VARIÁVEIS E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+:root {
+    --preto: #0F172A;
+    --preto2: #1E293B;
+    --branco: #FFFFFF;
+    --azul: #2563EB;
+    --azul-hover: #1D4ED8;
+    --verde: #10B981;
+    --verde-hover: #059669;
+    --texto: #E2E8F0;
+    --texto-mutado: #94A3B8;
+    --borda: rgba(255, 255, 255, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background: var(--preto);
+    color: var(--texto);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Espaçamento equilibrado entre as seções */
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    color: var(--branco);
+}
+
+/* ==========================================================================
+   HEADER / MENU
+   ========================================================================== */
+header {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid var(--borda);
+    transition: background 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.2rem 24px;
+}
+
+header h1 {
+    color: var(--verde);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--verde);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 24px;
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1470') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero-text h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text h2 span {
+    color: var(--verde);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: var(--texto-mutado);
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+}
+
+button#learnMoreBtn, #contactForm button {
+    background: var(--verde);
+    color: var(--preto);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button#learnMoreBtn:hover, #contactForm button:hover {
+    background: var(--verde-hover);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   CARDS DE CONTEÚDO (PRODUÇÃO E TECNOLOGIAS)
+   ========================================================================== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--preto2);
+    border: 1px solid var(--borda);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: var(--branco);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: var(--texto-mutado);
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   LISTAS E ELEMENTOS EXTRA
+   ========================================================================== */
+#sobre p {
+    font-size: 1.1rem;
+    color: var(--texto-mutado);
+    max-width: 800px;
+    margin-bottom: 1rem;
+}
+
+.styled-list {
+    list-style: none;
+}
+
+.styled-list li {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.styled-list .check {
+    color: var(--verde);
+    font-weight: bold;
+}
+
+/* Seção de Números / Stats */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.stat .counter {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--verde);
+    display: block;
+}
+
+.stat h3 {
+    font-size: 1.1rem;
+    color: var(--texto-mutado);
+}
+
+/* Carrossel Redesenhado sem quebras de espaço */
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active-slide {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   FORMULÁRIO DE CONTATO E CORREÇÃO DO FOOTER
+   ========================================================================== */
+#contactForm {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    background: var(--preto2);
+    border: 1px solid var(--borda);
+    padding: 1rem;
+    color: var(--branco);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#contactForm textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Animação Fade-In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botão Top */
+#topButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--verde);
+    color: var(--preto);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+#topButton.show-top {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* FOOTER ENCAIXADO SEM ESPAÇO EXTRA */
+footer {
+    background: #0B1329;
+    padding: 2rem 24px;
+    text-align: center;
+    border-top: 1px solid var(--borda);
+    margin-top: 40px; /* Margem controlada para fechar a página perfeitamente */
+}
+
+footer p {
+    color: var(--texto-mutado);
+    font-size: 0.9rem;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Futuro Sustentável</title>
+    
+    <!-- Meta tags básicas para SEO -->
+    <meta name="description" content="Equilibrando a produção agrícola com a preservação do meio ambiente, promovendo inovação e sustentabilidade no campo.">
+    
+    <!-- Importando a fonte moderna Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- O atributo 'defer' garante o carregamento correto do script sem erros de null -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER / MENU DE NAVEGAÇÃO -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Agro Forte</h1>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#producao">Produção</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO HERO -->
+        <section class="hero" aria-label="Apresentação">
+            <div class="hero-text">
+                <h2>Agro Forte, <br><span>Futuro Sustentável</span></h2>
+                <p>Equilibrando a produção agrícola com a preservação do meio ambiente, promovendo inovação e sustentabilidade no campo.</p>
+                <button id="learnMoreBtn" type="button">Saiba Mais</button>
+            </div>
+            
+            <!-- Elementos Visuais de Fundo -->
+            <div class="floating-circle circle1" aria-hidden="true"></div>
+            <div class="floating-circle circle2" aria-hidden="true"></div>
+            <div class="floating-circle circle3" aria-hidden="true"></div>
+            <div class="bg-animation" aria-hidden="true"></div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre" class="section fade-in">
+            <h2>Sobre Nós</h2>
+            <p>Na Agro Forte, acreditamos que o futuro da agricultura depende de práticas sustentáveis que respeitem o meio ambiente. Produzimos alimentos de qualidade enquanto protegemos o solo, a água e a biodiversidade.</p>
+            <p>Incentivamos técnicas inovadoras e conscientes que aumentam a produtividade sem degradar a natureza, fortalecendo comunidades e promovendo um futuro equilibrado.</p>
+        </section>
+
+        <!-- SEÇÃO PRODUÇÃO -->
+        <section id="producao" class="section fade-in">
+            <h2>Produção Sustentável</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Grãos Sustentáveis</h3>
+                    <p>Rotação de culturas, manejo inteligente do solo e controle biológico para alta produtividade com baixo impacto.</p>
+                </article>
+                <article class="card">
+                    <h3>Fruticultura</h3>
+                    <p>Frutas cultivadas com respeito aos ciclos naturais e sem o uso excessivo de componentes químicos.</p>
+                </article>
+                <article class="card">
+                    <h3>Hortaliças Orgânicas</h3>
+                    <p>Alimentos frescos, 100% livres de agrotóxicos e focados no fortalecimento da comunidade local.</p>
+                </article>
+                <article class="card">
+                    <h3>Agrofloresta</h3>
+                    <p>Integração harmoniosa de árvores e culturas agrícolas, aumentando a biodiversidade e a fertilidade natural.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SUSTENTABILIDADE -->
+        <section id="sustentabilidade" class="section fade-in">
+            <h2>Práticas Sustentáveis</h2>
+            <ul class="styled-list">
+                <li><span class="check">✓</span> Uso racional da água e sistemas de irrigação inteligente.</li>
+                <li><span class="check">✓</span> Controle biológico focado no manejo integrado de pragas.</li>
+                <li><span class="check">✓</span> Reflorestamento e recuperação ativa de áreas degradadas.</li>
+                <li><span class="check">✓</span> Economia circular voltada para o reaproveitamento de resíduos.</li>
+            </ul>
+        </section>
+
+        <!-- SEÇÃO TECNOLOGIAS -->
+        <section id="tecnologias" class="section fade-in">
+            <h2>Tecnologias no Campo</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Drones</h3>
+                    <p>Monitoramento de plantações em tempo real, detectando anomalias e otimizando a aplicação de insumos.</p>
+                </article>
+                <article class="card">
+                    <h3>Sensores de Solo</h3>
+                    <p>Análise precisa da umidade e nutrientes diretamente da terra, garantindo a quantidade exata de recursos.</p>
+                </article>
+                <article class="card">
+                    <h3>Energia Renovável</h3>
+                    <p>Uso estratégico de painéis solares e biomassa para reduzir a dependência energética tradicional.</p>
+                </article>
+                <article class="card">
+                    <h3>Big Data e IA</h3>
+                    <p>Previsão analítica de safras e dados climáticos para um planejamento rural eficiente e seguro.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO IMPACTOS / NÚMEROS -->
+        <section class="numeros section fade-in">
+            <h2>Nossos Impactos Positivos</h2>
+            <div class="stats">
+                <div class="stat">
+                    <span class="counter" data-target="50000">0</span>
+                    <h3>Árvores Preservadas</h3>
+                </div>
+                <div class="stat">
+                    <span class="counter" data-target="250000">0</span>
+                    <h3>Litros Economizados</h3>
+                </div>
+                <div class="stat">
+                    <span class="counter" data-target="1200">0</span>
+                    <h3>Produtores Beneficiados</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO GALERIA (CARROSSEL) -->
+        <section class="galeria section fade-in">
+            <h2>Agricultura em Foco</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img class="slide active-slide" src="https://images.unsplash.com/photo-1508873696983-2dfd5898f8d3" alt="Plantação verde sustentável">
+                    <img class="slide" src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="Colheita de vegetais orgânicos">
+                    <img class="slide" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Estufa tecnológica">
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section id="contato" class="section fade-in">
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Seu nome" required>
+                <input type="email" id="email" placeholder="Seu email" required>
+                <textarea id="message" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button id="topButton" title="Voltar ao topo">↑</button>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Agro Forte. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
